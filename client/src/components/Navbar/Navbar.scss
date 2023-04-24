@@ -6,24 +6,26 @@
   padding: 1rem 2rem;
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
-  z-index: 2;
+  z-index: 1002;
 }
 
 .app__navbar-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
+  width: 80%;
   img {
-    width: 90px;
+    max-width: 90px;
     height: 20px;
     @media screen and (min-width: 2000px) {
       width: 180px;
       height: 40px;
     }
+  }
+  @media screen and (min-width: 900px) {
+    width: 180px;
   }
 }
 .app__navbar-links {
@@ -71,16 +73,15 @@
   height: 35px;
   border-radius: 50%;
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
-
   svg {
     width: 70%;
     height: 70%;
     color: var(--white-color);
+    min-width: 50px;
   }
 
   div {

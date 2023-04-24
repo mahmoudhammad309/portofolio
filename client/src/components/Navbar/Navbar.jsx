@@ -5,11 +5,10 @@ import './Navbar.scss';
 import { images } from '../../constants';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        {/* <img src={images.logo} alt="logo" /> */}
         <svg
           width='364'
           height='50'
